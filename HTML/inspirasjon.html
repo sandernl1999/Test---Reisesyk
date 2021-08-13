@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
+  <link rel="stylesheet" href="../CSS/burger.css">
+  <link rel="stylesheet" href="../CSS/destinasjoner.css">
+  <title>Reisesyk.no/inspirasjon</title>
+</head>
+<body style="background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);" class="bakgrunn">
+
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul class="lines">
+            <li class="underline"><a class="line" href="../index.html">Startside</a></li>
+            <li class="underline"><a class="line" href="./destinasjoner.html">Destinasjoner</a></li>
+            <li class="underline"><a class="line" href="./inspirasjon.html">Inspirasjon</a></li>
+            <li class="underline"><a class="line" href="./reisetips.html">Reisetips</a></li>
+            <li class="underline"><a class="line" href="./galleri.html"> Galleri</a></li>
+            <li class="underline"><a class="line" href="./visum.html">Visum</a></li>
+            <li class="underline"><a class="line" href="./om.html">Om</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <header class="showcase">
+
+    <div id="navbar">
+        <a class="items" href="../index.html">HJEM</a>
+        <a class="items" href="./galleri.html">GALLERI</a>
+        <a class="items" href="./inspirasjon.html">INSPIRASJON</a>
+        <a class="items" href="./reisetips.html">REISETIPS</a>
+        <a class="items" href="./destinasjoner.html">DESTINASJONER</a>
+      </div>
+
+      <div id="SOME">
+        <!-- <a href="#" class="fa"><img src="./Images/tiktok.png" alt="tiktok" width="38px" height="38px"></a>-->
+         <a href="https://www.instagram.com/sandernordby/" target="_blank" class="fa fa-instagram"></a>
+         <a href="mailto:sandernl@hotmail.no" class="fa fa-google"></a>
+         <a href="https://www.linkedin.com/in/sander-nordby-larsen-041a12155/?originalSubdomain=no" target="_blank" class="fa fa-linkedin"></a>
+       </div>
+
+      <style>
+          h1{
+              text-align: center;
+              padding-top: 2em;
+          }
+
+          @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);
+  }
+
+  .wrapper {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+  }
+  
+  .showcase {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    /*background: url(./Images/IMG_0761.jpg) no-repeat center center/cover;*/
+  }
+
+  .secondrow{
+    background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);
+      position: relative;
+      height: auto;
+  }
+
+
+  /* Blurry bakgrunn*/
+  :root {
+    background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);
+  --overlay-color: rgba(42, 42, 44, 0.85);
+  --menu-speed: 0.75s;
+}
+  
+  .showcase:before {
+    content: '';
+    background: url('/Images/Jordan.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .secondrow:before {
+    content: '';
+   /* background: url('./Images/IMG_1792.jpg') no-repeat center center/cover;*/
+    background: linear-gradient(to right,#6eb7da, #85c6db, #77b6d3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .bakgrunn{
+   background-size: 100%;
+   background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);
+  }
+  
+  .showcase .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7em;
+    justify-content: center;
+    padding-bottom: 8em;
+    text-align: center;
+    height: 100%;
+  }
+
+  .showcase h1 {
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .showcase p {
+    font-size: 1.3rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 1.2em;
+    background: var(--primary-color);
+    color: #fff;
+    background-color: rgb(72, 175, 223);
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.2rem;
+    transition: opacity 1s ease-in-out;
+    text-decoration: none;
+   
+  }
+  
+  .btn {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .btn {
+    transition: all 0.3s;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: -0.2em;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+   
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: white;
+    border-bottom-color: white;
+    transform: scale(0.1, 1);
+  }
+  .btn:hover span {
+    letter-spacing: 2px;
+  }
+  .btn:hover::before {
+    opacity: 1;	
+    transform: scale(1, 1);	
+  }
+  .btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 5%;
+    transition: all 0.3s;
+    background-color: rgba(90, 79, 79, 0.1);
+  }
+  .btn:hover::after {
+    opacity: 0;	
+    transform: scale(0.1, 1);
+  }
+
+h1 a {
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+
+
+      </style>
+      <main>
+
+        <div class = "second-container">
+    
+          <div class = "filter-container">
+              <div class = "category-head">
+                  <ul>
+                      <div class = "category-title active" id = "all">
+                          <li>Alt</li>
+                          <span><i class = "fas fa-border-all"></i></span>
+                      </div>
+                      <div class = "category-title" id = "asia">
+                          <li>Favoritter</li>
+                          <span><i class = "fas fa-heart"></i></span>
+                      </div>
+                      <div class = "category-title" id = "politics">
+                          <li>Inspirasjon</li>
+                          <span><i class = "fas fa-lightbulb"></i></span>
+                      </div>
+                      <div class = "category-title" id = "finance">
+                          <li>Praktisk</li>
+                          <span><i class = "fas fa-mobile-alt"></i></span>
+                      </div>
+                      <div class = "category-title" id = "business">
+                          <li>Backpacking</li>
+                          <span><i class = "fas fa-hiking"></i></span>
+                      </div>
+                      <div class = "category-title" id = "sports">
+                          <li>Diverse</li>
+                          <span><i class = "fas fa-list-alt"></i></span>
+                      </div>
+                  </ul>
+              </div>
+      
+              <div class = "posts-collect">
+                  <div class = "posts-main-container">
+                      <!-- single post -->
+                      <div class = "all business">
+                          <div class = "post-img">
+                              <img src = "/Images/transport.jpg" alt = "post">
+                              <span class = "category-name">Transport</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>Januar, 2019</span>
+                                  
+                              </div>
+                              <h2>Verdens vakreste sted</h2>
+                              <p>Den nordligste øyen på Hawaii er verdens våteste sted, men samtidig det mest eksotiske.</p>
+                          </div>
+                         <a href="/HTML/visum.html"><button type = "button" class = "read-btn">Les mer</button></a>
+                      </div>
+                      <div class = "all business">
+                          <div class = "post-img">
+                              <img src = "/Images/party.jpg" alt = "post">
+                              <span class = "category-name">Festing</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>Februar 08, 2019</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Petra</h2>
+                              <p>Underverk</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all business">
+                          <div class = "post-img">
+                              <img src = "/Images/hostelworl.jpg" alt = "post">
+                              <span class = "category-name">Hostelverden</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all business">
+                          <div class = "post-img">
+                              <img src = "/Images/packing.jpg" alt = "post">
+                              <span class = "category-name">Pakkeliste</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all asia">
+                          <div class = "post-img">
+                              <img src = "/Images/mountains.jpg" alt = "post">
+                              <span class = "category-name">Fjellene på Hawaii</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Haiku stairs</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all asia">
+                          <div class = "post-img">
+                              <img src = "/Images/panda.jpg" alt = "post">
+                              <span class = "category-name">Panda i Chengdu</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all asia">
+                          <div class = "post-img">
+                              <img src = "/Images/pubcrawl.jpg" alt = "post">
+                              <span class = "category-name">Pub Crawl, Koh tao</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all finance">
+                          <div class = "post-img">
+                              <img src = "/Images/apps.jpg" alt = "post">
+                              <span class = "category-name">Applikasjoner</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all finance">
+                          <div class = "post-img">
+                              <img src = "/Images/visum.jpeg" alt = "post">
+                              <span class = "category-name">Visum</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn"><a href="/HTML/visum.html"> Read All</a></button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all finance">
+                          <div class = "post-img">
+                              <img src = "/Images/sim.jpg_fit=scale" alt = "post">
+                              <span class = "category-name">Sim-kort</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all politics">
+                          <div class = "post-img">
+                              <img src = "/Images/songkran.jpg" alt = "post">
+                              <span class = "category-name">Songkran festival</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all politics">
+                          <div class = "post-img">
+                              <img src = "/Images/jordan.jpg" alt = "post">
+                              <span class = "category-name">Jordan på budsjett</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all politics">
+                          <div class = "post-img">
+                              <img src = "/Images/duck.jpg" alt = "post">
+                              <span class = "category-name">Ducktown i Vietnam</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all politics">
+                          <div class = "post-img">
+                              <img src = "/Images/singapore.jpg" alt = "post">
+                              <span class = "category-name">Skybar i Singapore</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all sports">
+                          <div class = "post-img">
+                              <img src = "/Images/rentcar.jpg" alt = "post">
+                              <span class = "category-name">Kjøre bil?</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <!-- end of single post -->
+                      <!-- single post -->
+                      <div class = "all sports">
+                          <div class = "post-img">
+                              <img src = "/Images/tipping.jpg " alt = "post">
+                              <span class = "category-name">Tipsing</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                      <div class = "all sports">
+                          <div class = "post-img">
+                              <img src = "./Images/nogo.jpg" alt = "post">
+                              <span class = "category-name">Steder å unngå</span>
+                          </div>
+      
+                          <div class = "post-content">
+                              <div class = "post-content-top">
+                                  <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                  <span>
+                                      <i class = "fas fa-comment"></i>34
+                                  </span>
+                              </div>
+                              <h2>Lorem ipsum dolor sit amet</h2>
+                              <p>Lorem, ipsum dolor sit amet</p>
+                          </div>
+                          <button type = "button" class = "read-btn">Read All</button>
+                      </div>
+                     
+                      <!-- end of single post -->
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </main>
+
+  <script src="./destinasjoner.js"></script>
+</body>
+</html>

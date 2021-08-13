@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/navbar.css">
+  <link rel="stylesheet" href="../CSS/burger.css">
+</head>
+<body>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul class="lines">
+                <li class="underline"><a class="line" href="index.html">Startside</a></li>
+                <li class="underline"><a class="line" href="../HTML/destinasjoner.html">Destinasjoner</a></li>
+                <li class="underline"><a class="line" href="../HTML/inspirasjon.html">Inspirasjon</a></li>
+                <li class="underline"><a class="line" href="../HTML/reisetips.html">Reisetips</a></li>
+                <li class="underline"><a class="line" href="../HTML/galleri.html"> Galleri</a></li>
+                <li class="underline"><a class="line" href="../HTML/visum.html">Visum</a></li>
+                <li class="underline"><a class="line" href="../HTML/om.html">Om</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <header class="showcase">
+    
+        <div id="navbar">
+            <a class="items" href="/index.html">HJEM</a>
+            <a class="items" href="/HTML/galleri.html">GALLERI</a>
+            <a class="items" href="/HTML/inspirasjon.html">INSPIRASJON</a>
+            <a class="items" href="/HTML/reisetips.html">REISETIPS</a>
+            <a class="items" href="/HTML/destinasjoner.html">DESTINASJONER</a>
+          </div>
+    
+          <div id="SOME">
+           <!-- <a href="#" class="fa"><img src="./Images/tiktok.png" alt="tiktok" width="38px" height="38px"></a>-->
+            <a href="https://www.instagram.com/sandernordby/" target="_blank" class="fa fa-instagram"></a>
+            <a href="mailto:sandernl@hotmail.no" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/in/sander-nordby-larsen-041a12155/?originalSubdomain=no" target="_blank" class="fa fa-linkedin"></a>
+          </div>
+
+     <div class="overskrift">Sjekk om du trenger visum:</div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk...">
+
+    <table id="myTable">
+        <tr class="header" style=" background-color: rgb(247, 64, 64);
+        border-style: hidden; 
+        border: 1px solid rgb(247, 64, 64);
+        box-shadow: 0.5px 0px 1px 3.2px rgb(247, 64, 64) !important;
+        ">
+          <th class="program"  style="width:25%;">Land</th>
+          <th style="width:25%;">🌎✈️</th>
+          <th style="width 25%; ">Visumkrav</th>
+          <th class="andretall" style="width 25%;">Info</th>
+        </tr>
+   
+        <tr>
+            <td><a href="" style="text-decoration: none; color: black;">Vietnam<div class="skole"></div></a></td>
+            <td><a href=""><img style="width: 3em;" src="/Images/vietcong.png" alt=""></a></td>
+            <td>Ja</td>
+            <td class="andretall"><a target="_blank" style="color: black;" href="https://www.regjeringen.no/no/tema/utenrikssaker/reiseinformasjon/velg-land/reiseinfo_vietnam/id2415578/#innreise"> Mer info </a></td>
+          </tr>
+        <tr>
+            <td><a href="" style="text-decoration: none; color: black;">Thailand<div class="skole"></div></a></td>
+            <td><a href=""><img style="width: 3em;" src="/Images/thai-flag.png" alt=""></a></td>
+            <td>Nei</td>
+            <td class="andretall"><a target="_blank" style="color: black;" href="https://www.regjeringen.no/no/tema/utenrikssaker/reiseinformasjon/velg-land/reiseinfo_thailand/id2415097/#innreise"> Mer info </a></td>
+          </tr>
+        <tr>
+            <td><a href="" style="text-decoration: none; color: black;">Kina<div class="skole"></div></a></td>
+            <td><a href=""><img style="width: 3em;" src="/Images/china.png" alt=""></a></td>
+            <td>Ja</td>
+            <td class="andretall"><a target="_blank" style="color: black;" href="https://www.regjeringen.no/no/tema/utenrikssaker/reiseinformasjon/velg-land/reiseinfo_thailand/id2415097/#innreise"> Mer info </a></td>
+          </tr>
+    </table>
+
+<style>
+
+body{
+    background: linear-gradient(to right,#6eb7da, #4fa3be, #5faacc);
+  }
+
+
+#myInput {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 16em;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 18px;
+    margin-top: 1em;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: -1em;
+    outline: none;
+  }
+  
+  @media screen and (max-width: 800px){
+    #myInput{
+      width: 14em;
+      font-size: 16px;
+      margin-top: 5em;
+    }
+  }
+  @media screen and (max-width: 420px){
+    #myInput{
+      width: 11em;
+      margin-top: 5em;
+      font-size: 15px;
+    }
+  }
+
+
+  /*Studie-tabellen*/
+  #myTable {
+    margin-top: 3em;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: Verdana;
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  @media screen and (max-width: 1200px){
+    #myTable{
+      min-width: 40rem;
+      font-size: 12px;
+      margin-top: 4em;
+      
+    }
+  }
+  @media screen and (max-width: 1080px){
+    #myTable{
+      min-width: 40rem;
+      font-size: 11px;
+      
+    }
+  }
+  @media screen and (max-width: 900px){
+    #myTable{
+      min-width: 40rem;
+      font-size: 10px;
+      
+    }
+  }
+  @media screen and (max-width: 740px){
+    #myTable{
+      min-width: 34rem;
+      font-size: 10px;
+      
+    }
+  }
+  @media screen and (max-width: 620px){
+    #myTable{
+      min-width: 22rem;
+      font-size: 10px;
+      
+    }
+  }
+  @media screen and (max-width: 470px){
+    #myTable{
+      min-width: 20rem;
+      font-size: 9px;
+      
+    }
+  }
+  @media screen and (max-width: 420px){
+    #myTable{
+      min-width: 21rem;
+      font-size: 8px;
+      
+    }
+  }
+  @media screen and (max-width: 390px){
+    #myTable{
+      min-width: 19rem;
+      font-size: 7.3px;
+    }
+  }
+
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+   
+  }
+
+  #myTable tr {
+    border-bottom: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  #myTable tr.header {
+    
+  }
+
+  tr{
+    border-radius: 5px 5px;
+  }
+
+  .fa-handshake-o{
+    padding-right: 0.7em;
+  }
+
+  tr:hover{
+    background: #e0e0e0;
+  }
+
+  th{
+    color:rgb(250, 250, 250);
+    font-size: 16px;
+    filter: brightness(140%);
+  }
+
+  @media screen and (max-width: 775px){
+    th{
+     font-size: 13px;
+    }
+  }
+  @media screen and (max-width: 680px){
+    th{
+     font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 590px){
+    th{
+     font-size: 12px;
+    }
+  }
+
+  h2{
+   text-align: center;
+}
+
+.skole{
+  font-size: 0.0001px;
+  color: rgb(252, 252, 252);
+}
+
+.first{
+font-size: 1.2rem;
+text-align: center;
+font-weight: 500;
+}
+
+  /*Overskrift*/
+  .overskrift{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 2em;
+    position: relative;
+  }
+
+  @media screen and (max-width: 700px){
+    .overskrift{
+     font-size: 0.85rem;
+    }
+  }
+
+  .overskrift::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    bottom: -0.5em;
+    left: 40%; transform: translate(-50%);
+    background-color: rgb(253, 253, 253);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .overskrift:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    
+  }
+
+  .wrapper {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+  }
+  
+ 
+  
+  .showcase {
+    background: var(--primary-color);
+    color: black;
+    height: 100vh;
+    position: relative;
+    /*background: url(./Images/IMG_0761.jpg) no-repeat center center/cover;*/
+  }
+
+ 
+  /* Blurry bakgrunn*/
+  :root {
+  
+  --overlay-color: rgba(42, 42, 44, 0.85);
+  --menu-speed: 0.75s;
+}
+  
+  .showcase:before {
+    content: '';
+    background: url('./Images/IMG_0761.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+
+
+  .bakgrunn{
+   background-size: 100%;
+  }
+  
+  .showcase .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7em;
+    justify-content: center;
+    padding-bottom: 8em;
+    text-align: center;
+    height: 100%;
+  }
+
+
+
+
+ 
+</style>
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+    
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    </script>
+
+</body>
+</html>
